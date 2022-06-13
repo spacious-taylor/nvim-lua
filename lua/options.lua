@@ -42,4 +42,5 @@ opt.signcolumn = 'yes'
 vim.cmd [[
   colorscheme tokyonight
   let g:coq_settings = { 'auto_start': 'shut-up' }
+  let g:tabline_show_bufnr = v:true
 ]]
