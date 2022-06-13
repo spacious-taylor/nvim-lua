@@ -4,6 +4,7 @@ vgit.setup {
   keymaps = {
     ['n <C-k>'] = 'hunk_up',
     ['n <C-j>'] = 'hunk_down',
+    ['n <leader>gbb'] = 'buffer_gutter_blame_preview',
     ['n <leader>ghb'] = 'buffer_hunk_preview',
     ['n <leader>gdb'] = 'buffer_diff_preview',
     ['n <leader>ghp'] = 'project_hunks_preview',
