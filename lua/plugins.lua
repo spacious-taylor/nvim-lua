@@ -85,6 +85,11 @@ function use_plugins()
     config = config_path('which-key')
   } -- which key
   use 'liuchengxu/vista.vim' -- lsp symbols
+  use {
+    'kdheepak/tabline.nvim',
+    requires = {'hoob3rt/lualine.nvim', 'kyazdani42/nvim-web-devicons'},
+    config = config_path('tabline')
+  }
 
   -- language-specific
   -- rails-specific
