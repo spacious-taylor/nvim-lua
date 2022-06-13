@@ -12,8 +12,14 @@ function map(bufnr, mode, lhs, rhs, opts)
 end
 
 function on_attach(client, bufnr)
-  map(bufnr, "n", "<leader>ld", ":Telescope lsp_definitions theme=dropdown<CR>")
-  map(bufnr, "n", "<leader>lr", ":Telescope lsp_references theme=dropdown<CR>")
+  map(bufnr, 'n', '<leader>ld', vim.lsp.buf.definition)
+  map(bufnr, 'n', '<leader>lh', vim.lsp.buf.hover)
+  map(bufnr, 'n', '<leader>li', vim.lsp.buf.implementation)
+  map(bufnr, 'n', '<leader>ln', vim.lsp.buf.rename)
+  map(bufnr, 'n', '<leader>la', vim.lsp.buf.code_action)
+  map(bufnr, 'n', '<leader>lr', vim.lsp.buf.references)
+  map(bufnr, "n", "<leader>fd", ":Telescope lsp_definitions theme=dropdown<CR>")
+  map(bufnr, "n", "<leader>fr", ":Telescope lsp_references theme=dropdown<CR>")
 end
 
 for _, server in ipairs(servers) do
