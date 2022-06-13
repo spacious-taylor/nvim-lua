@@ -40,6 +40,12 @@ function use_plugins()
   use 'ms-jpq/coq.artifacts'
   use 'ms-jpq/coq.thirdparty'
 
+  -- session
+  use {
+    'rmagatti/auto-session',
+    config = config_path('auto-session')
+  }
+
   -- display
   use 'folke/tokyonight.nvim' -- colorscheme
   use {
@@ -78,6 +84,7 @@ function use_plugins()
     "folke/which-key.nvim",
     config = config_path('which-key')
   } -- which key
+  use 'liuchengxu/vista.vim' -- lsp symbols
 
   -- language-specific
   -- rails-specific

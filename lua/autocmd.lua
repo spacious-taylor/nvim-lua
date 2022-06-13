@@ -6,3 +6,6 @@ autocmd({ 'CursorMoved' }, {
   pattern = { '*.yml' },
   command = 'echo localorie#expand_key()'
 })
+autocmd({ 'VimLeavePre' }, {
+  command = 'SaveSession'
+})
