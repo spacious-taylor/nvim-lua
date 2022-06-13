@@ -1,16 +1,15 @@
 local _, lualine = pcall(require, 'lualine')
-local _, tabline = pcall(require, 'tabline')
 
 lualine.setup {
   options = {
     theme = 'tokyonight'
   },
   tabline = {
-    lualine_a = {},
+    lualine_a = {{ 'buffers', mode = 4 }},
     lualine_b = {},
-    lualine_c = { tabline.tabline_buffers },
-    lualine_x = { tabline.tabline_tabs },
+    lualine_c = {},
+    lualine_x = {},
     lualine_y = {},
-    lualine_z = {}
+    lualine_z = { 'vim.b.vista_nearest_method_or_function' }
   }
 }
