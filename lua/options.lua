@@ -38,6 +38,8 @@ opt.lazyredraw = true
 opt.signcolumn = 'yes'
 
 -- colorscheme
+-- plugin variables
 vim.cmd [[
   colorscheme tokyonight
+  let g:coq_settings = { 'auto_start': 'shut-up' }
 ]]
