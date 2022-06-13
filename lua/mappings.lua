@@ -35,6 +35,9 @@ map('n', '<leader>hw', ':HopWord<cr>')
 map('n', '<leader>hp', ':HopPattern<cr>')
 map('n', '<leader>hl', ':HopLine<cr>')
 
+-- vista
+map('n', '<leader>vv', ':Vista nvim_lsp<cr>')
+
 -- rails translation
 map('n', '<leader>lt', ':call localorie#translate()<cr>')
 
