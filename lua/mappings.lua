@@ -20,7 +20,8 @@ map('n', '\\', ',')
 -- buffer
 map('n', 'gb', '":<c-U>" . v:count1 . "bn<cr>"', { expr = true })
 map('n', 'gB', '":<c-U>" . v:count1 . "bp<cr>"', { expr = true })
-map('n', '<leader>q', ':bd<cr>')
+map('n', '<leader>b', '":<c-U>" . (v:count > 0 ? v:count : "") . "b<cr>"', { expr = true })
+map('n', '<leader>q', '":<c-U>" . (v:count > 0 ? v:count : "") . "bd<cr>"', { expr = true })
 
 -- terminal
 map('n', '<leader>ft', ':FloatermToggle<cr>')
